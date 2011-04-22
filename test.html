@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>Image Array Demo</title>	
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="script.js"></script>
+<script type-"text/javascript" src="hoverintent.js"></script>
+<link href="style.css" type="text/css" rel="stylesheet">
+
+</head>
+
+<body>	
+
+<script type="text/javascript">
+var card_deck = new deck_of_cards();
+</script>
+
+
+
+<a id="spd" href='#'>click here spades</a>
+<div class="contain_choose">
+<div class="card_picker_box">
+<ul class="list">
+<script type="text/javascript">
+$(document).ready(function(){
+
+$('#spd').one('click', function() {
+    make_list('spades');
+    $('.card_picker_box').fadeIn('slow');
+    $('.list img').hoverIntent(
+		function(event){$(this).animate({height:'68px',width:'55px'},'fast',function(){})},
+		function(event){$(this).animate({height:'53px',width:'40px'},'fast',function(){})}
+	);//end of hover 
+	
+
+	
+	});//end of .one click
+});//end od document ready function
+</script>
+</ul>
+</div>
+</div>
+	
+
+
+
+
+
+</body>
+
+</html>
+
+
+
+
+
+

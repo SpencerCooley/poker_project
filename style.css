@@ -1,0 +1,28 @@
+ul{
+	list-style:none;
+	margin:0px;
+	padding:0px;
+}
+ul li{
+	float:left;
+	
+}
+.card_picker_box{
+	height:100px;
+	width:620px;
+	display:none;
+}
+
+
+.contain_choose{
+	width:620px;
+	height:70px;
+	overflow:hidden;	
+}
+
+.list img{
+	width:40px;
+	height:53px;
+	margin:2px;
+	cursor:pointer;
+}
